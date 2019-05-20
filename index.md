@@ -9,5 +9,5 @@ sitemap:
 
 <div id="describe-text">
 	<p>My name is Jenny Rhee, and I am an aspiring data scientist based in Lafayette, LA. I was originally pursuing marine biology, but discovered my love for data and programming during a summer internship in 2017.</p>
-  <p>I have aspirations of using data science to attempt to solve problems involving renewable energy and climate policy. Other than that, I enjoy coffee, food, hiking, traveling (especially if it involves trying new coffee and food), and my dog Watson.</p>
+  <p>I have aspirations of using data science to attempt to solve problems involving renewable energy and climate policy. Other than that, I enjoy coffee, food, hiking, traveling (especially if it involves trying new coffee and food), and my dog Watson. Feel free to reach out!</p>
 </div>
