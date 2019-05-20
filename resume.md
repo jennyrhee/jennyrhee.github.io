@@ -34,7 +34,7 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 
 
 ### SKILLS
-Comfortable with ```Python (NumPy, pandas, matplotlib, seaborn), SQL, Excel```  
+Comfortable with ```Python (NumPy, pandas, matplotlib, seaborn), SQL, Git, Excel```  
 Some experience with ```machine learning (scikit-learn), NLP (NLTK, Gensim), MATLAB, Java, time series (statsmodels)```  
 
 ### EDUCATION  
