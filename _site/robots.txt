@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jennyrhee.github.io/sitemap.xml
