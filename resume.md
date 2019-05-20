@@ -12,7 +12,7 @@ title: Resume
 • Exploratory analysis (clustering, topic modeling) of rejected medical records to categorize and flag unbillable medical records earlier in order to reduce days to bill.  
 • Analyzed the “virality” of medics with low medical documentation accuracy on their partners.  
 • Time series analysis to forecast future number of billable calls for medic scheduling recommendations to operations managers.  
-_Technologies used: Python, Microsoft SQL Server_  
+_Technologies used: Python, T-SQL, Microsoft SQL Server_  
 
 **Great Lakes Summer Fellow** - University of Michigan, Ann Arbor, MI <span style="float: right; ">May to Aug 2018</span>  
 • Analyzed real-time data from 15 stations and buoys in the Great Lakes, their formats, and documentation.  
