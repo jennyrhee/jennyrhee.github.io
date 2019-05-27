@@ -8,7 +8,7 @@ title: Resume
 
 ### EXPERIENCE
 
-**Data Analyst Intern** - Acadian Ambulance, Lafayette, LA <span style="float: right; ">Aug 2018 to present</span>  
+**Data Analyst Intern** - Acadian Ambulance, Lafayette, LA <span style="float: right; ">Aug 2018 to May 2019</span>  
 • Exploratory analysis (clustering, topic modeling) of rejected medical records to categorize and flag unbillable medical records earlier in order to reduce days to bill.  
 • Analyzed the “virality” of medics with low medical documentation accuracy on their partners.  
 • Time series analysis to forecast future number of billable calls for medic scheduling recommendations to operations managers.  
