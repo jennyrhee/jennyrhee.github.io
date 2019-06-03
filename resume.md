@@ -3,7 +3,7 @@ layout: page
 title: Resume
 ---
 
-<span style="float: right; "><a href="{{ '/assets/Resume_JRhee.pdf' | prepend: site.baseurl }}"><strong>> Download my resume</strong></a> </span>
+<span style="float: right; "><a href="{{ '/assets/Resume_JRhee_DL.pdf' | prepend: site.baseurl }}"><strong>> Download my resume</strong></a> </span>
 <br>
 
 ### EXPERIENCE
