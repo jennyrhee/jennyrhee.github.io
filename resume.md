@@ -30,11 +30,11 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 ### SKILLS
 **Languages**: Python (NumPy, pandas, matplotlib, seaborn), MATLAB, Java, SQL  
 **Tools**: Git, Microsoft SQL Server, VS Code  
-**Technical skills**: machine learning (scikit-learn), NLP (NLTK, Gensim), time series (statsmodels)
+**Technical skills**: Machine learning (scikit-learn), NLP (NLTK), time series (statsmodels), experimental design, statistics
   
 ### EDUCATION  
-Springboard
-**Data Science Career Track, Certification**, July 2019 to present
+Springboard  
+**Data Science Career Track, Certification**, July 2019 to present  
 • 6 month intensive course in data science, machine learning, Python, SQL, and Spark
 _Estimated completion: November 2019_
 
