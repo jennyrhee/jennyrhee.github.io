@@ -12,23 +12,23 @@ title: Resume
 _Technologies used: Python, Excel_
 
 **Data Analyst Intern** - Acadian Ambulance, Lafayette, LA <span style="float: right; ">Aug 2018 to May 2019</span>  
-• Led the first data science projects to be conducted at the company
+• Led the first data science projects to be conducted at the company  
 • Exploratory analysis (clustering, topic modeling) of rejected medical records to categorize and flag unbillable medical records earlier in order to reduce days to bill  
-• Analyzed the “virality” of medics with low medical documentation accuracy on their partners with the goal of changing training procedures
+• Analyzed the “virality” of medics with low medical documentation accuracy on their partners with the goal of changing training procedures  
 • Time series analysis to forecast future daily numbers of billable calls for more efficient medic scheduling recommendations to operations managers  
 _Technologies used: Python, T-SQL, Microsoft SQL Server_  
 
 **Great Lakes Summer Fellow** - University of Michigan, Ann Arbor, MI <span style="float: right; ">May to Aug 2018</span>  
-• Proposed a data management solution for 15 stations and buoys in the Great Lakes. Data were in inconsistent formats and units over time and between stations, ranged over a decade, and stored as flat text files on a server.
+• Proposed a data management solution for 15 stations and buoys in the Great Lakes. Data were in inconsistent formats and units over time and between stations, ranged over a decade, and stored as flat text files on a server.  
 • Analyzed real-time data from 15 stations and buoys in the Great Lakes, their formats, and documentation  
 • Developed a data processing script to normalize historical time-series data into a database  
 • Designed and implemented a time-series database to manage historical and real-time streaming data from the Great Lakes  
 _Technologies used: Python, TimescaleDB_  
 
 **NSF REU Fellow** - Dauphin Island Sea Lab, Dauphin Island, AL <span style="float: right; ">May to Aug 2017</span>  
-• Collaborated with a physical oceanographer and biological oceanographer to design an experiment using existing data that had yet to be analyzed
+• Collaborated with a physical oceanographer and biological oceanographer to design an experiment using existing data that had yet to be analyzed  
 • Processed, sanitized, and compiled several  years (2009-2012) of CTD data from 15 stations  
-• Calculated Model-I linear regressions and statistics to make conclusions about the Mobile Bay to shelf transect 
+• Calculated Model-I linear regressions and statistics to make conclusions about the Mobile Bay to shelf transect  
 • Won 1st place in the REU poster symposium, awarding full funding to present research at Ocean Sciences Meeting in Portland, OR  
 _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_  
 
