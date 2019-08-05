@@ -20,7 +20,7 @@ title: Blog
 <li class="post-teaser">
 <a href="{{ post.url | prepend: site.baseurl }}">
 <span class="post-teaser__title">{{ post.title }}</span>
-<span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+<span class="post-teaser__date">{{ post.date | date: "%B %d, %Y" }}</span>
 </a>
 </li>
 {% endfor %}
