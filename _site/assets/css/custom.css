@@ -1,0 +1,11 @@
+.post-teaser__tags {
+
+}
+
+.teaser-tag {
+    letter-spacing: 2px;   
+}
+
+.teaser-tag a::before {
+    content: "#";
+}
