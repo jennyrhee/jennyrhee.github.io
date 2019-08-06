@@ -1,12 +1,11 @@
-post-teaser__tags {
+.post-teaser__tags {
 
 }
 
-
-teaser-tag {
-    
+.teaser-tag {
+    letter-spacing: 2px;   
 }
 
-teaser-tag small a:before {
+.teaser-tag a::before {
     content: "#";
 }
