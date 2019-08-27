@@ -8,7 +8,7 @@ title: Resume
 
 ### PROJECTS
 
-**Severe Storm Events in Louisiana**
+**[Severe Storm Events in Louisiana](https://github.com/jennyrhee/storm-events)**  
 • *(In progress)* Using two NOAA data sets (severe storm events and meteorological) for EDA and modeling storm events in Louisiana
 • Technologies used: Python (BeautifulSoup, requests, pandas, NumPy, pandarallel), SQLite
 
