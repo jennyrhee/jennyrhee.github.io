@@ -10,7 +10,7 @@ title: Resume
 
 **[Severe Storm Events in Louisiana](https://github.com/jennyrhee/storm-events)**  
 • *(In progress)* Using two NOAA data sets (severe storm events and meteorological) for EDA and modeling storm events in Louisiana
-• Technologies used: Python (BeautifulSoup, requests, pandas, NumPy, pandarallel), SQLite
+• Technologies used: Python (pandas, NumPy, pandarallel, seaborn, matplotlib, BeautifulSoup, requests), SQLite
 
 ### SKILLS
 
@@ -33,17 +33,16 @@ _Technologies used: Python, Excel_
 _Technologies used: Python, T-SQL, Microsoft SQL Server_  
 
 **Great Lakes Summer Fellow** - University of Michigan, Ann Arbor, MI <span style="float: right; ">May to Aug 2018</span>  
-• Proposed a data management solution for 15 stations and buoys in the Great Lakes. Data were in inconsistent formats and units over time and between stations, ranged over a decade, and stored as flat text files on a server.  
-• Analyzed real-time data from 15 stations and buoys in the Great Lakes, their formats, and documentation  
 • Developed a data processing script in Python to normalize historical time-series data into a database  
+• Proposed a data management solution for 15 stations and buoys in the Great Lakes. Data were in inconsistent formats and units over time and between stations, ranged over a decade, and stored as flat text files on a server.  
 • Designed and implemented a time-series database (TimescaleDB) to manage historical and real-time streaming data from the Great Lakes  
 _Technologies used: Python, TimescaleDB_  
 
 **NSF REU Fellow** - Dauphin Island Sea Lab, Dauphin Island, AL <span style="float: right; ">May to Aug 2017</span>  
+• Won 1st place in the REU poster symposium, awarding full funding to present research at Ocean Sciences Meeting in Portland, OR  
 • Collaborated with a physical oceanographer and biological oceanographer to design an experiment using existing data that had yet to be analyzed  
 • Processed, sanitized, and compiled several  years (2009-2012) of CTD data from 15 stations  
 • Calculated Model-I linear regressions and statistics to make conclusions about the Mobile Bay to shelf transect  
-• Won 1st place in the REU poster symposium, awarding full funding to present research at Ocean Sciences Meeting in Portland, OR  
 _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_  
   
 ### EDUCATION
