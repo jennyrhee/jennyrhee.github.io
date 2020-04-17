@@ -6,22 +6,30 @@ title: Resume
 <span style="float: right; "><a href="{{ '/assets/Resume_JRhee_DL.pdf' | prepend: site.baseurl }}"><strong>> Download my resume</strong></a> </span>
 <br>
 
-### PROJECTS
-
-**[Severe Storm Events in Louisiana](https://github.com/jennyrhee/storm-events)**  
-• *(In progress)* Using two NOAA data sets (severe storm events and meteorological) for EDA and modeling storm events in Louisiana
-• Technologies used: Python (pandas, NumPy, pandarallel, seaborn, matplotlib, BeautifulSoup, requests), SQLite
-
 ### SKILLS
 
-**Languages**: Python (NumPy, pandas, matplotlib, seaborn), SQL, MATLAB, Java  
-**Tools**: Git, Microsoft SQL Server, VS Code  
-**Technical skills**: Machine learning (scikit-learn), experimental design, statistics, NLP (NLTK), time series (statsmodels)
+**Languages/Tools**: Python (NumPy, pandas, matplotlib, seaborn, SciPy, scikit-learn), SQL, Git, Tableau, Java, MATLAB, Excel  
+**Technical skills**: Machine learning, experimental design, A/B testing, web scraping, statistics, NLP
+
+### PROJECTS
+
+**[Predicting fllod events in Louisiana](https://github.com/jennyrhee/flood-events)**  
+• Using two NOAA data sets (severe storm events and meteorological) to train a random forest model to predict flood events in Louisiana with forecast data
+• Technologies used: Python (pandas, NumPy, pandarallel, seaborn, matplotlib, BeautifulSoup, requests, SciPy, scikit-learn), SQLite
 
 ### RELEVANT EXPERIENCE
 
-**Research Associate** - Louisiana State University, Baton Rouge, LA <span style="float: right; ">June 2019 to present</span>  
-• Compiling data from various sources to build an econometric model to analyze the effects of driving forces on a variety of environmental impacts in the U.S. and Germany over the past two centuries  
+**Marketing Analyst** - Waitr, Lafayette, LA  
+<span style="float:right; ">November 2019 to present</span>  
+• Assisted in designing A/B tests and analyzed results to optimize marketing campaigns  
+• Created a marketing dashboard to track weekly KPIs and wrote a script to automate complex data retrieval  
+• Identified an approximately $1M per year stream of cannibalized revenue from coupon fraud  
+• Analyzed the order behavior effects of a loyalty program (+200% average orders per year) leading to program redesign with the goal of increasing customer penetration and engagement  
+• Researched restaurants not yet on the platform and scraped data that was necessary for restaurant acquisition efforts  
+_Technologies used: Python, AWS Redshift, PostgreSQL, Tableau, Sisense_
+
+**Research Associate** - Louisiana State University, Baton Rouge, LA <span style="float: right; ">June 2019 to November 2019</span>  
+• Compiled data from various sources to build an econometric model to analyze the effects of driving forces on a variety of environmental impacts in the U.S. and Germany over the past two centuries  
 • Developing a simulation model in Python to illustrate the relationship between embodied energy and fitness of a K-selected species  
 _Technologies used: Python, Excel_
 
@@ -29,7 +37,6 @@ _Technologies used: Python, Excel_
 • Led the first data science projects to be conducted at the company  
 • Exploratory analysis (clustering using scikit-learn and topic modeling using Gensim and MALLET) of rejected medical records to categorize and understand the common reasons for rejection  
 • Analyzed the “virality” of medics with low medical documentation accuracy on their partners with the goal of changing training procedures  
-• Time series analysis (statsmodels) to forecast future daily numbers of billable calls for more efficient medic scheduling recommendations to operations managers  
 _Technologies used: Python, T-SQL, Microsoft SQL Server_  
 
 **Great Lakes Summer Fellow** - University of Michigan, Ann Arbor, MI <span style="float: right; ">May to Aug 2018</span>  
@@ -49,8 +56,7 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 
 Springboard  
 **Data Science Career Track, Certification**, July 2019 to present  
-• 6 month intensive course in data science, data visualization, machine learning, Python, SQL, and Spark
-_Estimated completion: November 2019_
+• Intensive course in data science, data visualization, machine learning, Python, SQL, and Spark
 
 University of Louisiana at Lafayette  
 **B.S. Biology**, May 2018  
