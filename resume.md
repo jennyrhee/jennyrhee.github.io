@@ -17,13 +17,13 @@ title: Resume
 **Marketing Analyst** - Waitr, Lafayette, LA
 <span style="float:right; ">November 2019 to present</span>  
 • Tracked and analyzed the performance of marketing campaigns (push notifications, emails)  
-• Designed statistically rigoroous A/B tests and analyzed results to optimize marketing campaigns  
+• Designed statistically rigorous A/B tests and analyzed results to optimize marketing campaigns  
 • RFM customer segmentation using k-means clustering and quartile bucketing  
 • Identified an approximately $1M per year stream of cannibalized revenue from coupon fraud  
 • Analyzed the order behavior effects of a loyalty program (+200% average orders per year) leading to program redesign with the goal of increasing customer penetration and engagement  
-• Created a marketing dashboard to track weekly KPIs and wrote a script to automate complex data retrieval  
+• Created a marketing dashboard to track weekly KPIs and wrote scripts to automate complex data retrieval  
 • Worked with the sales and business intelligence teams to research restaurants not yet on the app and scraped data that was necessary for restaurant acquisition efforts  
-_Technologies used: Python, AWS Redshift, PostgreSQL, Tableau, Sisense_
+_Technologies used: Python, AWS Redshift, PostgreSQL, Tableau, Sisense, Braze, Leanplum_
 
 **Research Associate** - Louisiana State University, Baton Rouge, LA <span style="float: right; ">June 2019 to November 2019</span>  
 • Compiled data from various sources to build an econometric model to analyze the effects of driving forces on a variety of environmental impacts in the U.S. and Germany over the past two centuries  
@@ -52,7 +52,7 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 ### PROJECTS
 
 **Predicting sentiment from tweets from U.S. airlines**  
-• __(In progress)__ Using a labeled data set of tweets about U.S. airlines to train a model to predict sentiment  
+• _(In progress)_ Using a labeled data set of tweets about U.S. airlines to train a model to predict sentiment  
 • Technologies used: Python (pandas, NumPy, matplotlib, nltk, scikit-learn)  
 
 **[Predicting flood events in Louisiana](https://github.com/jennyrhee/flood-events/blob/master/docs/final-report.md)**  
