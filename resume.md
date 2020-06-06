@@ -14,7 +14,7 @@ title: Resume
 
 ### RELEVANT EXPERIENCE
 
-**Marketing Analyst** - Waitr, Lafayette, LA  
+**Marketing Analyst** - Waitr, Lafayette, LA
 <span style="float:right; ">November 2019 to present</span>  
 • Tracked and analyzed the performance of marketing campaigns (push notifications, emails)  
 • Designed statistically rigoroous A/B tests and analyzed results to optimize marketing campaigns  
