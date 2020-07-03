@@ -62,7 +62,7 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 ### EDUCATION
 
 Springboard  
-**Data Science Career Track, Certification**, July 2019 to present  
+**Data Science Career Track, Certification**, June 2020  
 • Intensive course in data science, data visualization, machine learning, Python, SQL, and Spark
 
 University of Louisiana at Lafayette  
