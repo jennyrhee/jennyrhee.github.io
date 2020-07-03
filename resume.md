@@ -10,7 +10,7 @@ title: Resume
 
 **Languages/Tools**: Python (NumPy, pandas, matplotlib, SciPy, scikit-learn, etc), AWS Redshift, PostgreSQL, Git, Tableau, Excel  
 **Technical Skills**: Machine learning, experimental design, A/B testing, web scraping, statistics, NLP  
-**Marketing Tools**: Braze, Leanplum
+**Marketing Tools**: Braze, Leanplum, Google Analytics
 
 ### RELEVANT EXPERIENCE
 
@@ -51,11 +51,11 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 
 ### PROJECTS
 
-**Predicting sentiment from tweets from U.S. airlines**  
-• _(In progress)_ Using a labeled data set of tweets about U.S. airlines to train a model to predict sentiment  
-• Technologies used: Python (pandas, NumPy, matplotlib, nltk, scikit-learn)  
+**Predicting sentiment from tweets from U.S. airlines**  [(Web App)](https://jenny-airline-sentiment.herokuapp.com/) [(Github)](https://github.com/jennyrhee/airline-sentiment)  
+• Used a labeled data set of tweets about U.S. airlines to train a model to predict sentiment  
+• Technologies used: Python (pandas, NumPy, matplotlib, seaborn, nltk, scikit-learn, Flask, Plotly, Tweepy), Heroku  
 
-**[Predicting flood events in Louisiana](https://github.com/jennyrhee/flood-events/blob/master/docs/final-report.md)**  
+**[Predicting flood events in Louisiana]**  [(Github)]((https://github.com/jennyrhee/flood-events/blob/master/docs/final-report.md))  
 • Used severe storm events and weather data from NOAA to train a random forest model to predict flood events in Louisiana with forecast data  
 • Technologies used: Python (pandas, NumPy, pandarallel, seaborn, matplotlib, BeautifulSoup, requests, SciPy, scikit-learn), SQLite
 
