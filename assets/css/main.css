@@ -7,7 +7,7 @@
     background-color: #FFF; }
 
   a {
-    color: #35b7b7;
+    color: #3597b7;
     font-weight: bold;
     text-decoration: none; }
 
@@ -58,7 +58,7 @@
   .logo {
     font-size: 300%;
     font-weight: 700;
-    color: #3597b7;
+    color: black;
     display: block; }
 
   .menu {
@@ -95,12 +95,19 @@
 
   .page-title__text {
     font-weight: 700;
-    font-size: 150%; }
+    font-size: 120%; }
 
   .page-title__subtitle {
     font-weight: 400;
     font-size: 75%;
     color: #828282; }
+  
+  .page-title__body {
+    font-weight: 400;
+    font-size: 60%;
+    color: #828282;
+    padding-bottom: 0.5em;
+  }
 
 /* =Post teasers *//*************************************************************/
   .list-posts {
