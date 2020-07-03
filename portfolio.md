@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 ---
 
-<div class="page-subtitle" style="padding-top: 0em; padding-bottom: 1.8 em;"><i>Please be patient -- dynos may need to fire up for Heroku apps. :)</i></div>
+<div class="page-subtitle" style="padding-top: 0em;"><i>Please be patient -- dynos may need to fire up for Heroku apps. :)<br><br></i></div>
 
 <div class="page">
 <a href="https://github.com/jennyrhee/airline-sentiment" target="_blank"><span class="page-subtitle">Airline Sentiment (<i class="fa fa-github"></i> Github)</span></a><br>
