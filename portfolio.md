@@ -7,7 +7,7 @@ title: Portfolio
 
 <div class="page">
 <a href="https://github.com/jennyrhee/airline-sentiment" target="_blank"><span class="page-subtitle">Airline Sentiment (<i class="fa fa-github"></i> Github)</span></a><br>
-    <span class="page-body">Second Springboard capstone project</span>
+    <span class="page-body">Second Springboard capstone project</span><br>
     <a href="https://jenny-airline-sentiment.herokuapp.com/" target="_blank">
         <img src="{{ '/assets/img/airline.png' | prepend: site.baseurl }}" id="airline" height="300px" width="600px" style="padding-bottom: 1.5em;">
     </a>
@@ -21,7 +21,7 @@ title: Portfolio
 <br>
 
 <span class="page-subtitle">Embodied Energy Simulation</span><br>
-    <span class="page-body">Built for an embodied energy publication at Louisiana State University with Dr. Brian Snyder</span>
+    <span class="page-body">Built for an embodied energy publication at Louisiana State University with Dr. Brian Snyder</span><br>
     <a href="https://emergy-simulation.herokuapp.com/" target="_blank">
         <img src="{{ '/assets/img/emergy.png' | prepend: site.baseurl }}" id="emergy" height="350px" width="600px" style="padding-bottom: 1.5em;">
     </a>
