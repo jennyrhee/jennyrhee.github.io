@@ -175,6 +175,7 @@
     max-width: 250px;
     margin: auto;
     margin-bottom: 3%;
+    display: block;
   }
 
   #describe-text {
@@ -183,8 +184,6 @@
       width: 100%; }
   
   .page {
-    display: block;
-    width: auto;
     overflow: hidden;
     text-align:center;
   }
