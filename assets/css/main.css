@@ -1862,7 +1862,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #81b29a;
 		}
 
 	select {
@@ -1959,7 +1959,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #81b29a;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2081,15 +2081,15 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #eaac8b;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: #f2cc8f;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+      color: #598392;
 		}
 
 /* Image */
@@ -2490,7 +2490,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #E07A5F;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2567,9 +2567,16 @@ input, select, textarea {
       border-bottom: none;
       position: relative;
       float: left;
-      width: 2.8em;
       text-align: center;
       margin-right: 1em;
+    }
+
+    .features .skills-logo {
+      width: 2.8em;
+    }
+
+    .features .skills-logo-wide {
+      width: 5.2em;
     }
 
     .features .icon-img,
@@ -2593,6 +2600,17 @@ input, select, textarea {
       position: absolute;
       left: 0;
       top: 0.6em;
+      opacity: 0;
+      font-size: 0.5em;
+      transition: 0.5s;
+    }
+
+    .skills-logo-wide .icon-text {
+      width: 90%;
+      height: 90%;
+      position: absolute;
+      left: 39em;
+      top: 14.8em;
       opacity: 0;
       font-size: 0.5em;
       transition: 0.5s;
@@ -2658,7 +2676,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #eaac8b;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2875,8 +2893,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
+			background-color: #81b29a;
+			color: #f4f1de;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2914,13 +2932,13 @@ input, select, textarea {
       }
 
       .portrait {
-        width: 20%;
+        width: 25%;
         margin-bottom: 1em;
         border-radius: 50%;
       }
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #f6f5e9;
 			}
 
 			.wrapper.style1 label {
@@ -2941,12 +2959,12 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #21b2a6;
+					background: #81b29a;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c8ece9;
+				color: #f4f1de;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2957,7 +2975,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: #81b29a;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -3050,7 +3068,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #598392;
 			color: #d3d4e4;
 		}
 
@@ -3104,7 +3122,7 @@ input, select, textarea {
 
 				.wrapper.style3 select option {
 					color: #ffffff;
-					background: #505393;
+					background: #598392;
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
@@ -3120,7 +3138,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #505393;
+				color: #598392;
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
@@ -3421,7 +3439,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #81b29a;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
