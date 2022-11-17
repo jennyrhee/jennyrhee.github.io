@@ -55,7 +55,7 @@ _Technologies used: MATLAB, SeaBird SBE Data Processing, Excel_
 • Used a labeled data set of tweets about U.S. airlines to train a model to predict sentiment  
 • Technologies used: Python (pandas, NumPy, matplotlib, seaborn, nltk, scikit-learn, Flask, Plotly, Tweepy), Heroku  
 
-**[Predicting flood events in Louisiana]**  [(Github)]((https://github.com/jennyrhee/flood-events/blob/master/docs/final-report.md))  
+**Predicting flood events in Louisiana**  [(Github)]((https://github.com/jennyrhee/flood-events/blob/master/docs/final-report.md))  
 • Used severe storm events and weather data from NOAA to train a random forest model to predict flood events in Louisiana with forecast data  
 • Technologies used: Python (pandas, NumPy, pandarallel, seaborn, matplotlib, BeautifulSoup, requests, SciPy, scikit-learn), SQLite
 
