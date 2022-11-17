@@ -2563,7 +2563,6 @@ input, select, textarea {
     }
 
     .features .skills-logo {
-      cursor: pointer;
       border-bottom: none;
       position: relative;
       float: left;
