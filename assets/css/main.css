@@ -2907,6 +2907,18 @@ input, select, textarea {
 				border-color: rgba(0, 0, 0, 0.125);
 			}
 
+      header.major {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portrait {
+        width: 20%;
+        margin-bottom: 1em;
+        border-radius: 50%;
+      }
+
 			.wrapper.style1 header.major p {
 				color: #c8ece9;
 			}
