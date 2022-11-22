@@ -1775,7 +1775,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 3.5em 0;
+		margin: 0 0 3em 0;
 	}
     header#skills {
       margin: 0 0 0.5em 0;
@@ -2081,15 +2081,15 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #eaac8b;
+			color: #598392;
 		}
 
 		.icon.style2 {
-			color: #f2cc8f;
+			color: #eaac8b;
 		}
 
 		.icon.style3 {
-      color: #598392;
+      color: #f2cc8f;
 		}
 
 /* Image */
