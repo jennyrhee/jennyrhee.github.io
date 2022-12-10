@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Airline Sentiment</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="../index.html">Jenny Sutton</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html#portfolio">Portfolio</a></li>
+                  <li><a href="../index.html#skills">Skills</a></li>
+                  <li>
+                    <a
+                      href="../assets/Resume_JSutton.pdf"
+                      target="_blank"
+                      download
+                      >Resume</a
+                    >
+                  </li>
+                  <li><a href="../index.html#contact-me">Contact Me</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <article id="main">
+        <header>
+          <h2 class="h2-project">
+            Predicting sentiment from tweets about U.S. airlines
+          </h2>
+          <p>Springboard Final Capstone Project - July 2020</p>
+        </header>
+        <section class="wrapper style5">
+          <div class="inner">
+            <div class="gif-container">
+                <img
+                  class="project-gif"
+                  src="../gifs/airline-sentiment.gif"
+                  alt="A gif demoing the web app"
+                />
+            </div>
+
+            <h3>Purpose and Goal</h3>
+            <p>
+              This was my second capstone project for the Springboard Data
+              Science bootcamp. The goal was to train a model to predict
+              sentiment and develop a web app that can be used to monitor the
+              current sentiment of various airlines day-to-day and display
+              representative tweets. The major phases were data cleaning,
+              exploratory analysis, training the model, and developing the web
+              app. During this project, I was able to learn some methods to
+              deploying a machine learning model to a web app and some basic web
+              development skills!
+            </p>
+            <p>
+              This page contains a high level overview, but a more detailed
+              report can be found
+              <a
+                href="https://github.com/jennyrhee/airline-sentiment/blob/main/docs/final-report.pdf"
+                >here</a
+              >.
+            </p>
+            <p>
+              The design was TwoColours, a free, fully standards-compliant CSS
+              template designed by
+              <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The
+              website was previously hosted on Heroku, but has been taken down
+              since they removed their free account tier; I was already paying
+              $5 a month on Git LFS storage for the models. :(
+            </p>
+            <h4>Stack</h4>
+            <p style="font-size: 0.85em">
+              Python (pandas, NumPy, matplotlib, seaborn, nltk, scikit-learn,
+              Flask, Plotly, Tweepy), Heroku
+            </p>
+
+            <hr />
+
+            <h4>Data Sources</h4>
+            <p>
+              The data came from
+              <a href="https://www.figure-eight.com/data-for-everyone/"
+                >Figure Eight</a
+              >, who provides high quality training data to solve various
+              machine learning problems, and can be found
+              <a
+                href="https://www.kaggle.com/crowdflower/twitter-airline-sentiment"
+                >here</a
+              >. Once the model was trained, Twitter data came from the API to
+              determine the current sentiment of different airlines.
+            </p>
+            <p>
+              Additional features were created from the original tweets: the
+              total character count, the number of capital letters, the capital
+              letter to character count ratio, the number of words, the number
+              of happy emoticons, the number of sad emoticons, the number of
+              exclamation marks, and the number of question marks.
+            </p>
+
+            <hr />
+
+            <h4>Exploratory Data Analysis</h4>
+            <p>
+              Unsurprisingly, the general trend was that most people tweeted
+              about an airline for negative reasons. Positive and neutral tweets
+              were much less common, which likely impacted the model's accuracy
+              due to imbalanced classes.
+            </p>
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="images/sentiment-proportions.png"
+                alt="A graph that shows the proportions of negative, positive, and neutral tweets by airline"
+              />
+            </div>
+
+            <p>
+              For all airlines, customer service issues were a consistent
+              problem. However, it should be noted that it was not the most
+              frequent negative reason for Delta, which was late flights.
+              America, Southwest, and US Airways also had common complaints
+              regarding cancelled flights. Virgin America and Delta differed
+              from the other airlines because their third top reason was about
+              bad flights.
+            </p>
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="images/negative-reasons.png"
+                alt="A graph that shows the proportions of negative reasons by airline"
+              />
+            </div>
+
+            <p>
+              The correlation values for sentiment_int vs. the other features
+              were calculated using the
+              <a href="https://en.wikipedia.org/wiki/Correlation_ratio"
+                >correlation ratio</a
+              >, which ranges from 0 to 1.
+            </p>
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="images/correlation-matrix.png"
+                alt="A correlation matrix"
+              />
+            </div>
+
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="images/negative-word-cloud.png"
+                alt="Word cloud for negative words"
+              />
+            </div>
+
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="images/positive-word-cloud.png"
+                alt="Word cloud ofr positive words"
+              />
+            </div>
+
+            <hr />
+
+            <h4>Model</h4>
+            <p>
+              Two classification algorithms were used to compare performance
+              with tf-idf vectorizer: Naive Bayes and random forest. Naive Bayes
+              performed significantly worse than random forest; the mean
+              accuracy score for Naive Bayes was 0.679 versus 0.763 for random
+              forest. The bag-of-words model was then compared to tf-idf, which
+              had a mean accuracy score of 0.757 vs. 0.763 for tf-idf. The
+              hyperparameters for the final model were optimized using
+              randomized search.
+            </p>
+
+            <div class="project-img-container">
+              <img
+                class="project-img"
+                src="images/classification-report.png"
+                alt="Classification report"
+              />
+            </div>
+
+            <hr />
+
+            <h4>Issues and Potential Improvements</h4>
+            <ul>
+              <li>
+                Didn't have any web development experience prior to this
+                project, so that was a little bit of a learning curve (mainly
+                figuring out Flask and Heroku since the design was primarily
+                from a template)
+              </li>
+              <li>
+                Ran into issues with the file sizes of the pickled models when
+                trying to upload them to Github (had to pay for a data pack to
+                use Git LFS storage in order to upload them)
+              </li>
+              <li>
+                Somewhat of a performance issue once the website was live
+                because the Heroku dyno was much slower than my machine, so the
+                model took longer to predict sentiment (not a great user
+                experience)
+              </li>
+              <li>
+                The model could also certainly use improvements since there was
+                not much data for neutral and positive tweets, so it didn't
+                perform as well for those
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/jennyrhee" class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jennysutton"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:jennyirhee@gmail.com" class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Jenny Sutton</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

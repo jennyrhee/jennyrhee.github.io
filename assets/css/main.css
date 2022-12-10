@@ -3922,6 +3922,28 @@ input, select, textarea {
 			margin: 0 0 0.5em 0;
 		}
 
+        #main .h2-project {
+            max-width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gif-container,
+        .project-img-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-gif {
+            width: 75%;
+            margin-bottom: 1.5em;
+        }
+
+        .project-img {
+            width: 50%;
+            margin-bottom: 1em;
+        }
+
 		#main > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
