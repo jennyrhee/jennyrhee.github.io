@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jenny Sutton</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png"/>
+    <link rel="manifest" href="/site.webmanifest" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css"/></noscript>
+  </head>
+  <body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="../index.html">Jenny Sutton</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html#portfolio">Portfolio</a></li>
+                  <li><a href="../index.html#skills">Skills</a></li>
+                  <li>
+                    <a href="../assets/Resume_JSutton.pdf" target="_blank" download>Resume</a>
+                  </li>
+                  <li><a href="../index.html#contact-me">Contact Me</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <article id="main">
+        <header>
+            <h2>
+                Predicting flood events<br />
+                in Louisiana
+            </h2>
+          <p>First Springboard Capstone Project - June 2020</p>
+        </header>
+        <section class="wrapper style5">
+          <div class="inner">
+            <h3>Purpose and Goal</h3>
+            <p>
+                This was my first capstone project for the Springboard Data
+                Science bootcamp. The goal was to build a model 
+                that is capable of taking in forecast data and return the likelihood 
+                of a flood event occurring in Louisiana. The major phases were data
+                cleaning, exploratory analysis, and training the model.
+            </p>
+            <p>
+                This page contains a high level overview, but a more detailed
+                report can be found
+                <a href="https://github.com/jennyrhee/flood-events/blob/master/docs/final-report.md">here</a>.
+            </p>
+
+            <h4>Stack</h4>
+            <p style="font-size: 0.85em">
+                Python (pandas, NumPy, pandarallel, seaborn, matplotlib, BeautifulSoup, requests, SciPy, scikit-learn), SQLite
+            </p>
+
+            <hr />
+
+            <h4>Data Sources</h4>
+            <p>
+                NWS provided 
+                <a href="https://catalog.data.gov/dataset/ncdc-storm-events-database">storm data</a>
+                containing statistics on personal injuries and damage estimates from
+                1950 to present. There were 34 different storm events including various
+                types of floods, hurricanes, thunderstorms, hail, etc.
+                There were 51 columns including damage, injuries, deaths, etc.
+                I used Python scripts to download all 213 csv files, create a database, 
+                and ingest the data into the database.
+            </p>
+            <p>
+                Additional supporting data included historical meteorological data
+                to analyze any potential correlations. NOAA's National Centers for
+                Environmental Information had
+                <a href="https://www.ncdc.noaa.gov/cdo-web/datatools/findstation/">Daily Summaries data</a>
+                at numerous stations across the United States. This data included
+                air temperature, precipitation, and wind speed.
+            </p>
+            <div class="project-img-container">
+                <img class='project-img' src="images/flood_stations.png" alt="A map of weather stations in Louisiana">
+            </div>
+
+            <hr />
+
+            <h4>Exploratory Data Analysis</h4>
+            <p>
+                There were 668 flash floods, 132 floods, and 11 coastal
+                floods in the dataset. NWS provided 
+                <a href="https://www.ncdc.noaa.gov/stormevents/pd01016005curr.pdf">documentation</a>
+                defining the storm events recorded in the database.
+                <ul>
+                    <li>
+                        flash flood: life-threatening, rapid rise of water
+                        into a normally dry area beginning within minutes
+                        to multiple hours of the causative event (e.g., 
+                        intense rainfall, dam failure, ice jam)
+                    </li>
+                    <li>
+                        flood: any high flow, overflow, or inundation by
+                        water which causes damage
+                    </li>
+                    <li>
+                        coastal flood: flooding of coastal areas due to
+                        vertical rise above normal water level caused by
+                        strong, persistent onshore wind, high astronomical
+                        tide, and/or low atmospheric pressure
+                    </li>
+                </ul>
+                The first feature I wanted to check out was precipitation,
+                which I expected to be the most important feature for the model.
+            </p>
+
+            <div class="project-img-container">
+              <img class="project-img" src="images/flood_precip-box.png" alt="A box plot showing the distributions of precipitation by flood type"/>
+            </div>
+
+            <p>
+              Wind speed was another anticipated feature of interest because these events are
+              caused by coastal processes such as waves, tides, and storm surges, which are
+              strongly influenced by wind.
+            </p>
+            <div class="project-img-container">
+              <img class="project-img" src="images/flood_wind.png" alt="A box plot showing the distributions of wind speed by flood type"/>
+            </div>
+
+            <p>
+                The following image is the correlation matrix.
+                The grey area indicates relationships that are with themselves (e.g., 
+                `avg_wind_spd` vs. `avg_wind_spd`, etc.), relationships that are 
+                nonsensical (e.g., region vs. season, etc.), or repeating values 
+                (e.g., `prcp` vs. `avg_wind_spd` shown only once). Any relationships 
+                that were not statistically significant were also greyed out. 
+            </p>
+            <div class="project-img-container">
+              <img class="project-img" src="images/flood_corr_matrix.png" alt="A correlation matrix"/>
+            </div>
+
+            <hr />
+
+            <h4>Model</h4>
+            <p>
+                Two classification algorithms were used: logistic regression
+                and random forest. Both algorithms were beneficial because 
+                they are both generally easy to interpret, allowing for easier
+                stakeholder communication. Logistic regression was selected because
+                it is the go-to method for binary classification problems. Random 
+                forest was selected because it works well with fitting categorical
+                features and high dimensional data. Random forest performed the best
+                with an F-2 score of 0.839 compared to logistic regression’s F-2 
+                score of 0.836. Hyperparameter tuning was done with cross-validated grid search.
+            </p>
+
+            <div class="table-wrapper">
+                <table class='alt'>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>precision</td>
+                            <td>recall</td>
+                            <td>f1-score</td>
+                            <td>support</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>no flood</td>
+                            <td>0.98</td>
+                            <td>0.95</td>
+                            <td>0.96</td>
+                            <td>1247</td>
+                        </tr>
+                        <tr>
+                            <td>flood</td>
+                            <td>0.74</td>
+                            <td>0.87</td>
+                            <td>0.80</td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>accuracy</td>
+                            <td></td>
+                            <td></td>
+                            <td>0.94</td>
+                            <td>1450</td>
+                        </tr>
+                        <tr>
+                            <td>macro avg</td>
+                            <td>0.86</td>
+                            <td>0.91</td>
+                            <td>0.88</td>
+                            <td>1450</td>
+                        </tr>
+                        <tr>
+                            <td>weighted avg</td>
+                            <td>0.94</td>
+                            <td>0.94</td>
+                            <td>0.94</td>
+                            <td>1450</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr />
+
+            <h4>Issues and Potential Improvements</h4>
+            <p>
+                Data cleaning and joining the two data sets together were the trickiest
+                parts of this project.
+            </p>
+            <ul>
+                <li>
+                    The storm events data used parish to indicate location of the event,
+                    but several data points were not exact parish names and had to be 
+                    cleaned to be one of the distinct 64 parishes in the state
+                </li>
+                <li>
+                    The meteorological data did not include parishes for each
+                    station, which was how I joined it with the storm events data.
+                    Had to use an API to query for each parish based on coordinates
+                    of each station. Then the station data was aggregated to represent
+                    the parish in its entirety by taking the mean of all data points
+                    for stations within each station for each date
+                </li>
+                <li>
+                    The data was sparse; when the storm events and meteorological data
+                    were joined, there were only 2,202 flood events, of which only 812
+                    data points had complete meteorological data. A better data set
+                    would improve the model's capability to predict flood events
+                </li>
+            </ul>
+            <p>
+                Further data exploration could be done in order to find other data 
+                sources or potentially feature engineering to strengthen the model.
+                Predictive weather models are exceptionally complex, and there is
+                likely much more that can be done to develop a stronger model with
+                a higher F-2 score. Additionally, a web application could be
+                developed to allow access for use by stakeholders.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <!-- CTA -->
+      <section id="contact-me" class="wrapper style4">
+        <div class="inner">
+          <header>
+            <h2>Let's work together!</h2>
+            <p>
+              Feel free to reach out if you think I'd be a good fit for an open
+              role, have a question, or just want to connect. :)
+            </p>
+          </header>
+          <ul class="actions">
+            <li>
+              <a href="mailto:jennyirhee@gmail.com" class="button icon solid fa-envelope">Email Me</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="https://github.com/jennyrhee" class="icon brands fa-github"><span class="label">Github</span></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jennysutton" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+          </li>
+          <li>
+            <a href="mailto:jennyirhee@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Jenny Sutton</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
